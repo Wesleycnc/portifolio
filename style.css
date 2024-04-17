@@ -1,0 +1,204 @@
+/* Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface {
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.interface .text span{
+    font-size: 50px;
+    font-weight: 600;
+    min-width: 280px;
+}
+/* Define um estilo para um elemento span dentro de um h1 dentro de um elemento com a classe "text" dentro de um elemento com a classe "interface" */
+.interface .text h1 span {
+    position: relative;
+}
+
+/* Cria um efeito de animação para o texto antes do span */
+.interface .text h1 span::before {
+    content: "";
+    color: #ff6347; /* Define a cor do texto animado */
+    animation: words 20s infinite; /* Aplica a animação 'words' ao texto */
+}
+
+.interface .text span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px); /* Define a largura do elemento como a largura do texto mais uma margem */
+    height: 100%; /* Define a altura do elemento como 100% */
+    background-color: #000; /* Define a cor de fundo do elemento como preto */
+    border-left: 2px solid #ff6347; /* Adiciona uma borda esquerda ao elemento com a cor definida */
+    right: -8px; /* Alinha o elemento à direita com uma margem negativa */
+    animation: cursor .8s infinite, typing 20s steps(14) infinite; /* Aplica as animações 'cursor' e 'typing' ao elemento */
+}
+
+/* Define a animação do cursor */
+@keyframes cursor {
+    to {
+        border-left: 2px solid #000; /* Altera a cor da borda esquerda para preto */
+    }
+}
+
+/* Define a animação das palavras */
+@keyframes words {
+    0%, 20% {
+        content: "Wesley Caldas"; /* Define o conteúdo do texto como "Wesley Caldas" nos primeiros 20% da animação */
+    }
+    /* Define o conteúdo do texto como "Student" nos próximos 20% da animação, e assim por diante */
+    21%, 40% {
+        content: "Student";
+    }
+    41%, 60% {
+        content: "Developer";
+    }
+    61%, 80% {
+        content: "Front-End";
+    }
+    81%, 100% {
+        content: none; /* Remove o conteúdo do texto nos últimos 20% da animação */
+    }
+}
+
+/* Define a animação da digitação */
+@keyframes typing {
+    /* Define os pontos de interrupção onde a largura é 0% */
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    /* Define os pontos de interrupção onde a largura é igual à largura do texto mais a margem */
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 8px);
+    }
+}
+
+/* Estilo cabeçalho */
+
+.flex {
+    display: flex;
+}
+
+
+header {
+    padding: 40px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn_contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #ff6347;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .btn_contato button:hover {
+    box-shadow: 0px 0px 8px #ff6347;
+}
+
+
+header .logo button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #ff6347;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .logo button:hover {
+    box-shadow: 0px 0px 8px #ff6347;
+}
+
+
+/* Top of site */
+section.top_of_site {
+    padding: 40px 4%;
+    border: #5c5c5c;
+    
+}
+
+.top_of_site h1 {
+    color: #fff;
+    font-size: 50px;
+}
+.top_of_site h2 {
+    color: #fff;
+    font-size: 50px;
+}
+
+.top_of_site .flex {
+    margin-top: 10vw;
+    align-items: center;
+}
+
+.home-sci {
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    gap: 2vh;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ff6347;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #ff6347;
+    text-decoration: none;
+
+}
+
+
+.home-sci a:hover {
+    border: 2px solid #ff6347;
+    transform: scale(1.05);
+}
