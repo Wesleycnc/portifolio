@@ -18,11 +18,12 @@ body {
     margin: 0 auto;
 }
 
-.interface .text span{
+.interface .text span {
     font-size: 50px;
     font-weight: 600;
     min-width: 280px;
 }
+
 /* Define um estilo para um elemento span dentro de um h1 dentro de um elemento com a classe "text" dentro de um elemento com a classe "interface" */
 .interface .text h1 span {
     position: relative;
@@ -31,56 +32,96 @@ body {
 /* Cria um efeito de animação para o texto antes do span */
 .interface .text h1 span::before {
     content: "";
-    color: #ff6347; /* Define a cor do texto animado */
-    animation: words 20s infinite; /* Aplica a animação 'words' ao texto */
+    color: #ff6347;
+    /* Define a cor do texto animado */
+    animation: words 20s infinite;
+    /* Aplica a animação 'words' ao texto */
 }
 
 .interface .text span::after {
     content: "";
     position: absolute;
-    width: calc(100% + 8px); /* Define a largura do elemento como a largura do texto mais uma margem */
-    height: 100%; /* Define a altura do elemento como 100% */
-    background-color: #000; /* Define a cor de fundo do elemento como preto */
-    border-left: 2px solid #ff6347; /* Adiciona uma borda esquerda ao elemento com a cor definida */
-    right: -8px; /* Alinha o elemento à direita com uma margem negativa */
-    animation: cursor .8s infinite, typing 20s steps(14) infinite; /* Aplica as animações 'cursor' e 'typing' ao elemento */
+    width: calc(100% + 8px);
+    /* Define a largura do elemento como a largura do texto mais uma margem */
+    height: 100%;
+    /* Define a altura do elemento como 100% */
+    background-color: #000;
+    /* Define a cor de fundo do elemento como preto */
+    border-left: 2px solid #ff6347;
+    /* Adiciona uma borda esquerda ao elemento com a cor definida */
+    right: -8px;
+    /* Alinha o elemento à direita com uma margem negativa */
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+    /* Aplica as animações 'cursor' e 'typing' ao elemento */
 }
 
 /* Define a animação do cursor */
 @keyframes cursor {
     to {
-        border-left: 2px solid #000; /* Altera a cor da borda esquerda para preto */
+        border-left: 2px solid #000;
+        /* Altera a cor da borda esquerda para preto */
     }
 }
 
 /* Define a animação das palavras */
 @keyframes words {
-    0%, 20% {
-        content: "Wesley Caldas"; /* Define o conteúdo do texto como "Wesley Caldas" nos primeiros 20% da animação */
+
+    0%,
+    20% {
+        content: "Wesley Caldas";
+        /* Define o conteúdo do texto como "Wesley Caldas" nos primeiros 20% da animação */
     }
+
     /* Define o conteúdo do texto como "Student" nos próximos 20% da animação, e assim por diante */
-    21%, 40% {
+    21%,
+    40% {
         content: "Student";
     }
-    41%, 60% {
+
+    41%,
+    60% {
         content: "Developer";
     }
-    61%, 80% {
+
+    61%,
+    80% {
         content: "Front-End";
     }
-    81%, 100% {
-        content: none; /* Remove o conteúdo do texto nos últimos 20% da animação */
+
+    81%,
+    100% {
+        content: none;
+        /* Remove o conteúdo do texto nos últimos 20% da animação */
     }
 }
 
 /* Define a animação da digitação */
 @keyframes typing {
+
     /* Define os pontos de interrupção onde a largura é 0% */
-    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
         width: 0;
     }
+
     /* Define os pontos de interrupção onde a largura é igual à largura do texto mais a margem */
-    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
         width: calc(100% + 8px);
     }
 }
@@ -156,14 +197,16 @@ header .logo button:hover {
 /* Top of site */
 section.top_of_site {
     padding: 40px 4%;
+    height: 50rem;
     border: #5c5c5c;
-    
+
 }
 
 .top_of_site h1 {
     color: #fff;
     font-size: 50px;
 }
+
 .top_of_site h2 {
     color: #fff;
     font-size: 50px;
@@ -202,3 +245,67 @@ section.top_of_site {
     border: 2px solid #ff6347;
     transform: scale(1.05);
 }
+
+
+
+/* LINGUAGENS */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+        
+}
+
+.languages {
+    height: 50rem;
+}
+
+.languages h1{
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    
+    
+
+}
+
+.languages span{
+    color: #ff6347;
+    
+
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+.card {
+    width: 200px;
+    height: 300px;
+    background-color: rgba(17, 17, 17, 0.274);
+    /* Ajuste o último valor para alterar a transparência */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adicionando sombra para destacar o card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Para alinhar a imagem no centro verticalmente */
+    margin-left: 2rem;
+    border: 1px solid #ff6347;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    /* Para garantir que a imagem mantenha sua proporção */
+}
+
