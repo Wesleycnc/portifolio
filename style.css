@@ -291,8 +291,6 @@ section.top_of_site {
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Adicionando sombra para destacar o card */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -300,6 +298,11 @@ section.top_of_site {
     /* Para alinhar a imagem no centro verticalmente */
     margin-left: 2rem;
     border: 1px solid #ff6347;
+    cursor: pointer;
+}
+.card:hover {
+    background-color: rgba(17, 17, 17, 0.274);
+    box-shadow: 0px 0px 8px #ff6347;
 }
 
 .card img {
@@ -309,3 +312,129 @@ section.top_of_site {
     /* Para garantir que a imagem mantenha sua proporção */
 }
 
+
+.projects h1{
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 5rem;
+    
+}
+.projects{
+    margin: 15rem;
+    margin-top: 2rem;
+    height: 50rem;
+}
+
+.projects span{
+    color: #ff6347;
+    
+
+}
+
+.projects .img_projects img{
+height: 300px;
+width: 500px;
+border-radius: 2rem;
+
+
+
+}
+.img_projects {
+    display: table;
+
+
+
+}
+.img_projects img {
+    display: table-cell;
+    float: left;
+
+
+}
+.img_projects img:hover {
+    box-shadow: 0px 0px 8px #ff6347;
+
+
+}
+.img_projects p {
+    color: #fff;    
+    display: table-cell;
+    float: left;
+    width: 500px;
+    margin-left: 5rem;
+
+}
+
+.text_img .btn_cod button{
+    padding: 10px 10px;
+    font-weight: 600;
+    background-color: #ff6347;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.text_img .btn_cod button:hover{
+    box-shadow: 0px 0px 8px #ff6347;
+}
+
+.about {
+    height: 50rem;
+}
+
+.text_about {
+    margin-top: 50px; /* Margem superior para separar do conteúdo 
+anterior */
+    color: #fff;
+    margin: 10rem;
+    padding: 20px; /* Espaçamento interno */
+    background-color: rgba(17, 17, 17, 0.274);
+    border-radius: 10px; /* Borda arredondada */
+    border: 1px solid #ff6347;
+}
+
+
+.about h1 {
+    font-size: 40px; /* Tamanho da fonte para o título */
+    font-weight: 700; /* Peso da fonte para o título */
+    color: #fff; /* Cor do texto */
+    margin-bottom: 5rem; /* Margem inferior para separar do texto */
+    text-align: center;
+}
+
+.about h1 span {
+    color: #ff6347; /* Cor do span */
+}
+
+.text_about p {
+    font-size: 18px; /* Tamanho da fonte para os parágrafos */
+    line-height: 1.6; /* Altura da linha */
+    margin-bottom: 15px; /* Margem inferior entre os parágrafos */
+}
+
+
+
+footer {
+    background-color: #000000; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 50px 0; /* Espaçamento interno */
+    border-top: 1px solid #ff6347;
+  }
+  
+.interface_footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Espaçamento interno horizontal */
+  }
+  
+  
+  .copyright {
+    text-align: center; /* Alinha o texto ao centro */
+    margin-top: 20px; /* Margem superior */
+  }
+  
+  .copyright p {
+    font-size: 14px; /* Tamanho da fonte */
+  }
