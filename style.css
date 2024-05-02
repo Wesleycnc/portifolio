@@ -198,7 +198,7 @@ header .logo button:hover {
 section.top_of_site {
     padding: 40px 4%;
     height: 50rem;
-    border: #5c5c5c;
+    border-bottom: 1px solid #ff6347;
 
 }
 
@@ -259,6 +259,7 @@ section.top_of_site {
 
 .languages {
     height: 50rem;
+    border-bottom: 1px solid #ff6347;
 }
 
 .languages h1{
@@ -324,6 +325,7 @@ section.top_of_site {
     margin: 15rem;
     margin-top: 2rem;
     height: 50rem;
+    
 }
 
 .projects span{
@@ -379,6 +381,7 @@ border-radius: 2rem;
 }
 
 .about {
+    border-top: 1px solid #ff6347;
     height: 50rem;
 }
 
