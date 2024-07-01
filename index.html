@@ -1,112 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css" />
-    <title>Bem vindo ao meu portifólio!</title>
-  </head>
-  <body>
-    <header>
-      <div class="interface">
-        <div class="logo">
-          <a href="" a>
-            <button>Wesley</button>
-          </a>
-        </div>
-        <nav class="menu_desktop">
-          <ul>
-            <li><a href="#section1">Home</a></li>
-            <li><a href="#section2">Skills</a></li>
-            <li><a href="#section3">projects</a></li>
-            <li><a href="#section4">about</a></li>
-          </ul>
-        </nav>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wesley Caldas</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-        <div class="btn_contato">
-          <a href="https://wa.me/5511977653239" target="_blank">
-            <button>contact</button>
-          </a>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#experiences">Experiences</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="home">
+      <div class="introduction">
+        <div  class="text" >
+          <h1 class="format">Wesley</h1>
+          <h1 class="bold">Caldas</h1>
+        </div>
+        <p class="format_2">Web Developer</p>
+        
+        <div class="network">
+          <a class="icon" href="https://www.linkedin.com/in/wesley-caldas-nunes-costa-078028225/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <a class="icon" href="https://github.com/Wesleycnc" target="_blank"><i class="bx bxl-github"></i></a>
         </div>
       </div>
-    </header>
-    <main id="section1">
-      <section class="top_of_site">
-        <div class="flex">
-          <div class="interface">
-            <div class="text">
-              <h1>I'm <span></span></h1> 
-            </div>
-        <div class="home-sci">
-          <a href="https://www.linkedin.com/in/wesley-caldas-nunes-costa-078028225/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-          <a href="https://github.com/Wesleycnc" target="_blank"><i class='bx bxl-github' ></i></a>
-        </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    </section>
 
-      <article id="section2" class="languages">
-          <h1><span>Ski</span>lls</h1>
-      <div class="cards">
-        <div class="card"> 
-          <a href=""><img src="img/html-5.png" alt=""></a>
-        </div>
-        <div class="card">  
-          <a href=""><img src="img/css-3.png" alt=""></a>
-        </div>
-        <div class="card">  
-          <a href=""><img src="img/js.png" alt=""></a>
-        </div>
-        <div class="card">  
-          <a href=""><img src="img/programacao.png" alt=""></a>
-        </div>
-        <div class="card">  
-          <a href=""><img src="img/java_original_wordmark_logo_icon_146459.png" alt=""></a>
-        </div>
-      </div>
-      </article>
-
-      <article id="section3" class="projects">
-        <h1><span>Pro</span>jects</h1>
-          <div class="img_projects">
-            <a href="https://rent-sports.000webhostapp.com/index.php" target="_blank"><img src="img/rent_sports.png" alt=""></a>
-            <p class="text_img">Este site foi desenvolvido como parte do meu curso de programador web no Senac. O conceito por trás do projeto era criar uma plataforma de locação de quadras society, onde os usuários podem criar suas contas, fazer login e ter acesso à opção de alugar uma quadra. Os dados do cliente são enviados ao banco de dados juntamente com a quadra escolhida por ele. Embora haja ainda muitos recursos a serem adicionados ao site, a ideia central já está claramente delineada. <a href="https://github.com/Wesleycnc/projeto-uc5.html" target="_blank" class="btn_cod"><button>Ver codigo</button></a></p>
-          </div>
-      </article>
-
-      <article id="section4" class="about">
-        <h1><span>Ab</span>out me</h1>
+    <section  id="about">
+      <div class="about_me">
         <div class="text_about">
-          <p>"I'm currently in my second semester of System Analysis and Development at Unicid, aiming to enhance my knowledge and skills in the technology field. Currently, I work as a Service Desk Analyst at IT.All, providing efficient technical support for end users.</p>
-
-          <p>Throughout my academic journey, I've built a solid foundation, supplemented by a Web Programming course completed at Senac. I'm committed to continuous development and, as such, engage in online courses, such as those offered by Onebitcode and Udemy, to further hone my skills.</p>
-            
-          <p>Determined to turn my passion for technology into tangible results, I'm seeking my first experience in software development. I'm eager to apply my learning to challenging projects, contribute to team and project growth, and add value to any work environment.</p>
-        </div>
-      </article>
-      <footer>
-        <div class="interface_footer">
-          <div class="footer-info">
-            <h3>Contact Information</h3>
-            <p>Email: wesleycaldas728@gmail.com</p>
-            <p>Phone: (11) 97765-3239</p>
+          <h1 data-aos="fade-up" class="title">About me</h1>
+          <h2 data-aos="fade-up" class="format_e-mail">wesleycaldas728@gmail.com</h2>
+          <p data-aos="fade-up" class="format_text">
+            Hello! My name is Wesley Caldas and I currently work as a helpdesk analyst, a role that provides me with valuable experience in technical support and problem-solving. However, my true enthusiasm and aspiration are focused on the field of programming. My interest in information technology is a constant motivation for me to pursue daily learning through courses and continuous studies. I am currently enrolled in the Analysis and Systems Development course, with an expected completion in 2025, preparing myself for a more challenging and exciting role in software development. My approach is based on continuous learning and improving my technical skills, combining academic theory with day-to-day practice. My experience as a helpdesk analyst has given me a solid foundation in technical support and problem-solving, skills that I intend to apply and further develop in my future career as a programmer.
+          </p>
+          <div data-aos="fade-up" class="content_img">
+            <a href="https://www.linkedin.com/in/wesley-caldas-nunes-costa-078028225/" target="_blank">
+              <img class="img_photo" src="img/7a6fb5d8-8938-4bb4-bb02-253e765da7da.jpg" alt="">
+            </a>
           </div>
-    
         </div>
-        <div class="copyright">
-          <p>&copy; 2024 Wesley Caldas. All rights reserved.</p>
-        </div>
-      </footer>
-    </main>
+      </div>
+    </section>
+  </main>
 
-  </body>
+  <footer></footer>
+
+<script src="scripts.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
 </html>
