@@ -242,87 +242,45 @@ section .text {
     
 }
 
-/* Skills */
-.heading {
-    font-size: 3rem;
-    border-bottom: 5px solid #024a66;
-    width: 13rem;
-    color: #fff;
-}
+/* Languages */
 
-
-.skills {
+.languages{
     background-color: #000000;
-    padding: 10rem;
-    min-height: auto;
-    padding-bottom: 7rem;
-    
+    height: 100vh;
+    padding: 10rem;    
+
 }
-
-
-.skills .skills-row {
+.cards{
     display: flex;
-    flex-wrap: wrap;
-    gap: 5rem;
-}
-
-.skills-row .skills-column {
-    flex: 1 1 40rem;
-}
-
-.skills-column .title_skills {
-    font-size: 2.5rem;
-    margin: 0 0 1 5rem;
-}
-
-.skills-box .skills-content{
-    position: relative;
-    border: .2rem solid #02394e;
-    border-radius: .6rem;
-    padding: .5rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9rem;
 
 }
 
+.card {
 
-
-.skills-content .progress {
-    padding: 1rem 0;
-}
-
-.skills-content .progress h3{
-    color: #fff;
-    font-size: 1.2em;
+    width: 300px;
+    border-radius: 10px;
+    height: 500px;
+    border: 3px solid #fff;
+    background-color: #02394e;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
 }
 
-.skills-content .progress h3 span{
-    color: #ffffff;
-}
-.skills-content .progress .bar{
-    height: 1rem;
-    border-radius: 1rem;
-    border: .1rem solid #02394e;
-    padding: .5rem;
-    margin: 1rem 0 ;
+.card img {
+    max-width: 100%; /* Para garantir que a imagem não ultrapasse as dimensões do card */
+    max-height: 100%; /* Para garantir que a imagem não ultrapasse as dimensões do card */
+    border-radius: 20px;
 }
 
-.skills-content .progress .bar span {
-    display: block;
-    height: 100%;
-    border-radius: .3rem;
-    background: #02394e;
+.section-title {
+    color: #ffffff; /* Cor do título */
+    font-size: 3rem; /* Tamanho da fonte do título */
+    margin-bottom: 8rem; /* Espaço abaixo do título */
+    border-bottom: 5px #024a66 solid ;
+    width: 12.5rem;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
-    width: 80%;
-}
-.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
-    width: 50%;
-}
-.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
-    width: 50%;
-}
-.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
-    width: 50%;
-}
